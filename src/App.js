@@ -4,6 +4,7 @@ import Contacts from "./Contacts";
 import About from "./About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
               <Contacts />
             </Route>
           </Switch>
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </div>
     </Router>
