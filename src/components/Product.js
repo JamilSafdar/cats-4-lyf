@@ -4,7 +4,6 @@ import "./Product.css";
 
 const Product = () => {
   const [productItem, setProductItem] = useState([]);
-  const [data, setData] = useState("");
   const apiKey = "ca70e52c-2990-4050-a666-5e2e97cb5784";
 
   useEffect(() => {
@@ -46,6 +45,11 @@ const Product = () => {
               <div className="product.Price">£{product.price}</div>
             </>
           </div>
+          <div className="btn">
+        <button>
+          <a>Add to Basket</a>
+        </button>
+      </div>
         </div>
       ))}
     </div>
