@@ -6,11 +6,11 @@ const Product = () => {
   const [productItem, setProductItem] = useState([]);
   const [data, setData] = useState("");
   const apiKey = "ca70e52c-2990-4050-a666-5e2e97cb5784";
-  
+
   useEffect(() => {
     GetProduct();
   }, []);
-  
+
   const GetProduct = () => {
     console.log("Run");
     fetch("https://api.thecatapi.com/v1/images/search?limit=10", {
@@ -33,22 +33,21 @@ const Product = () => {
       });
   };
 
-
   return (
-    <div className="product-container">
-      <div className="image-container">
+    <div className="display-board">
       {productItem.map((product) => (
+        <div className="product-container">
+          <div className="image-container">
             <img src={product.url} alt={product.name} />
-        ))}
-      </div>
-      <div className="product-content">
-        {productItem.map((product) => (
-          <>
-            <div className="product.Name">{product.name}</div>
-            <div className="product.Price">£{product.price}</div>
-          </>
-        ))}
-      </div>
+          </div>
+          <div className="product-content">
+            <>
+              <div className="product.Name">{product.name}</div>
+              <div className="product.Price">£{product.price}</div>
+            </>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

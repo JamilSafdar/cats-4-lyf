@@ -4,6 +4,7 @@ import Contacts from "./Contacts";
 import About from "./About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
+import Product from "./components/Product";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         </div>
       </div>
     </Router>
-  );
+);
 }
 
 export default App;
