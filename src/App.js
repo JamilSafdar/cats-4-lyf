@@ -7,6 +7,7 @@ import Navbar from './Navbar';
   
 function App() {
   return (
+
     <Router>
       <div className="App">
         
@@ -32,6 +33,11 @@ function App() {
         </div>
       </div>
     </Router>
+
+    <div className="App">
+        <p>Learn React</p>
+    </div>
+
   );
 }
 
