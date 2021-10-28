@@ -1,45 +1,35 @@
-import './App.css';
-import Home from './Home'
-import Contacts from './Contacts'
-import About from './About'
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Navbar from './Navbar';
-  
+import "./App.css";
+import Home from "./Home";
+import Contacts from "./Contacts";
+import About from "./About";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./Navbar";
+
 function App() {
   return (
-
     <Router>
       <div className="App">
-        
         {/* ANYTHING HERE WILL BE PERMANENTLY SHOWN */}
-        <Navbar/>
+        <Navbar />
 
-        <div className = "content">
+        <div className="content">
           <Switch>
-            
             <Route exact path="/">
               <Home />
             </Route>
-            
-            <Route exact path = "/about">
+
+            <Route exact path="/about">
               <About />
             </Route>
 
-            <Route exact path = "/contact">
+            <Route exact path="/contact">
               <Contacts />
             </Route>
-            
           </Switch>
         </div>
       </div>
     </Router>
-
-    <div className="App">
-        <p>Learn React</p>
-    </div>
-
   );
 }
 
 export default App;
-
