@@ -1,0 +1,27 @@
+.navbar {
+  background-color: var(--lighter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: 0% 10% 0% 0%;
+}
+
+.soloLink {
+  font-family: var(--lb);
+  margin: 0% 5% 0% 5%;
+  color: var(--dark);
+}
+
+h1 {
+  font-family: var(--ssp);
+  font-weight: 700;
+  color: var(--light);
+  display: flex;
+  align-self: center;
+  justify-self: end;
+}
