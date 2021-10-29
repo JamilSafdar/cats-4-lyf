@@ -1,9 +1,10 @@
 import Basket from "./Basket"
 import Product from "./components/Product"
+
 function Home() {
     return(
         <>
-            <h2>THIS IS THE HOMEPAGE COMPONENT</h2>
+            <h4>The best place to find your new feline friends</h4>
             <Product />
         </>
     )
