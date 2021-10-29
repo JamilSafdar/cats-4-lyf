@@ -1,12 +1,12 @@
-import "./App.css";
-import Home from "./Home";
-import BasketList from "./BasketList";
-import About from "./About";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./Navbar";
-import Product from "./components/Product";
+import './App.css';
+import Home from './Home'
+import BasketList from './BasketList'
+import About from './About'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Navbar from './Navbar';
+import Footer from './Footer';
 import Basket from './Basket';
-  
+
 function App() {
   return (
     <Router>
@@ -34,6 +34,9 @@ function App() {
             </Route>
             
           </Switch>
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </div>
     </Router>
