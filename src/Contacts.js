@@ -5,9 +5,22 @@ function Contacts() {
     <>
       <h2>None of these cats pick your fancy, or want to get in touch? </h2>
       <ul>
-        <li>Basil</li>
-        <li>Jamil</li>
-        <li>Lou</li>
+        <li>
+          <a href="https://github.com/DrStupid87" target="_blank">
+            Basil
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/JamilSafdar" target="_blank">
+            Jamil
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/1oupd" target="_blank">
+            {" "}
+            Lou
+          </a>
+        </li>
       </ul>
     </>
   );
