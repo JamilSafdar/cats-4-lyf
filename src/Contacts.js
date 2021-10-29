@@ -1,15 +1,16 @@
-function Contacts() {
-    return(
-        <>
-        <h2>THIS IS THE CONTACTS COMPONENT</h2>
-        <ul>
-            <li>Contact 1</li>
-            <li>Contact 2</li>
-            <li>Contact 3</li>
-        </ul>
-        </>
-    )
-  }
+import "./contacts.css";
 
-export default Contacts
-  
+function Contacts() {
+  return (
+    <>
+      <h2>None of these cats pick your fancy, or want to get in touch? </h2>
+      <ul>
+        <li>Basil</li>
+        <li>Jamil</li>
+        <li>Lou</li>
+      </ul>
+    </>
+  );
+}
+
+export default Contacts;
