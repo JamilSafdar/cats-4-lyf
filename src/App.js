@@ -6,33 +6,34 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Basket from './Basket';
+import Contacts from './Contacts';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        
         {/* ANYTHING HERE WILL BE PERMANENTLY SHOWN */}
-        <Navbar/>
+        <Navbar />
 
-        <div className = "content">
+        <div className="content">
           <Switch>
-            
             <Route exact path="/">
               <Home />
             </Route>
-            
-            <Route exact path = "/about">
+
+            <Route exact path="/about">
               <About />
             </Route>
 
             <Route exact path = "/basketList">
               <BasketList/>
-              
               {/* Basket takes 'props'. messsage displays a <h2> tag. total needs to be calculated, then passed in*/}
-              <Basket message="Total" total="499.99"/>
+              <Basket message="Total" total="499.99" />
             </Route>
-            
+
+            <Route exact path="/contact">
+              <Contacts />
+            </Route>
           </Switch>
         </div>
         <div className="footer">
@@ -44,4 +45,3 @@ function App() {
 }
 
 export default App;
-
