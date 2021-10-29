@@ -1,0 +1,26 @@
+import './Basket.css'
+
+const Feed = ({setBasket, basket}) => {
+
+    const basketHandler = (cat) => {
+        setBasket(...basket, cat)
+        
+    };
+
+    return (
+        <div>
+            {cats.map((cat, count) => {
+                return(
+                    <div>
+                        <img src={cat.url}/>
+                        <p>{cat.desc}</p>
+                        <button onSubmit={() => basketHandler(cat)}>Add to Basket</button>
+                    </div>
+                );
+                })}
+        </div>
+        )
+
+}
+
+export default Basket;
