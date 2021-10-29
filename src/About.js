@@ -1,19 +1,27 @@
-import './About.css';
+import "./about.css";
+
 function About() {
-    return(
-        <div className="about">
-        <h2>How we brought this dream to life?... </h2>
-        <p>This idea came about from a project that we were tasked to do on our Master Coding Bootcamp at Code Nation.<br/>The team worked tirelessly in the hope to bring joy and happiness to the masses by bringing them Cats4Lyf</p>
-        <ul>
-            <p>Contibutors:</p>
-            <li>Basil</li>
-            <li>Jamil</li>
-            <li>Lou</li>
-
-        </ul>
+  return (
+    <>
+      <div className="container">
+        <div className="text">
+          <h2>About Cats For Life's aim</h2>
+          <h4>Here at cat's for life, we only care about one thing.</h4>
+          <p>
+            {" "}
+            We firmly believe that the ratio of cats to humans in every house
+            should ALWAYS be 2:1. It pains us to see chaos-free houses.
+          </p>
+          <p>
+            {" "}
+            Plus, every order is an entry into a competition to win... you
+            guessed it!
+          </p>
+          <p> even more cats! </p>
         </div>
-    )
-  }
+      </div>
+    </>
+  );
+}
 
-export default About
-  
+export default About;
