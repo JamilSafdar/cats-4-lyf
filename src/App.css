@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -36,3 +37,16 @@
     transform: rotate(360deg);
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Source+Serif+Pro:wght@300;700&display=swap");
+
+:root {
+  --accent: #ffbf46;
+  --dark: #648381;
+  --darker: #575761;
+  --light: #8acb88;
+  --lighter: #ffffff;
+  --ssp: "Source Serif Pro";
+  --lb: "Libre Baskerville";
+}
+>>>>>>> 59ff3b037f239801063023901d78f8676a9bb24c
