@@ -1,3 +1,4 @@
+
 //----------→ REACT IMPORTS ----------→
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -40,18 +41,21 @@ const App = () => {
               <About />
             </Route>
 
-            <Route exact path = "/contact">
-              <Contacts/>
-              
+            <Route exact path = "/basketList">
+              <BasketList/>
+
               {/* Basket takes 'props'. messsage displays a <h2> tag. total needs to be calculated, then passed in*/}
               <Basket basket={basket}/>
             </Route>
-            
+
+            <Route exact path="/contact">
+              <Contacts />
+            </Route>
           </Switch>
         </div>
       </div>
     </Router>
-  );
+);
 }
 
 export default App;
