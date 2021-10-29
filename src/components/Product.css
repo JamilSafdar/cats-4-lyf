@@ -9,6 +9,9 @@
 .image-container img{
     overflow: hidden;
     height: 200px;
+    width: 90%;
+    border: inset black 2px;
+    border-radius: 5px;
 }
 
 .product-content{
