@@ -1,0 +1,27 @@
+.default{
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-family: var(--ssp);
+    color: var(--darker);
+  }
+  h2 {
+    font-size: 25px;
+    font-family: var(--ssp);
+    color: var(--darker);
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: var(--dark);
+  }
