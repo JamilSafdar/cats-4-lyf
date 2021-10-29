@@ -13,7 +13,7 @@ const Product = () => {
 
   const GetProduct = async () => {
     console.log("Run");
-    await fetch("https://api.thecatapi.com/v1/images/search?limit=10", {
+    await fetch("https://api.thecatapi.com/v1/images/search?limit=12", {
       headers: {
         "x-api-key": apiKey,
       },
