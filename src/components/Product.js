@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Default from "./Default";
 import "./Product.css";
 var faker = require('faker');
 
@@ -30,6 +31,7 @@ const Product = () => {
       })
       .catch((error) => {
         console.log("Error: ", error);
+        <Default />
       });
   };
   
